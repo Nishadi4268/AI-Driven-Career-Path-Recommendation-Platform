@@ -1,0 +1,154 @@
+skills,interest,education,career
+python;ml;sql,data science,bachelor,Data Scientist
+python;statistics;ml,data science,master,Data Scientist
+python;ml;data analysis,AI,bachelor,Data Scientist
+statistics;python;sql,analytics,bachelor,Data Scientist
+html;css;javascript,web design,diploma,Frontend Developer
+javascript;react;css,web development,bachelor,Frontend Developer
+html;javascript;react,frontend,bootcamp,Frontend Developer
+css;javascript;html,web design,self-taught,Frontend Developer
+python;django;api,backend,bachelor,Backend Developer
+python;api;sql,backend development,bachelor,Backend Developer
+django;python;sql,web backend,diploma,Backend Developer
+api;python;django,server development,bachelor,Backend Developer
+java;oop;sql,software,bachelor,Software Engineer
+java;oop;git,software development,bachelor,Software Engineer
+oop;java;sql,programming,master,Software Engineer
+java;git;oop,software engineering,bachelor,Software Engineer
+networking;security,cyber security,diploma,Cyber Security Analyst
+security;linux;networking,cybersecurity,bachelor,Cyber Security Analyst
+networking;security;linux,security,bachelor,Cyber Security Analyst
+linux;security;networking,cyber security,diploma,Cyber Security Analyst
+excel;financial modeling;accounting,finance,bachelor,Financial Analyst
+financial modeling;excel;accounting,financial analysis,bachelor,Financial Analyst
+accounting;excel;financial modeling,finance,master,Financial Analyst
+excel;accounting;sql,finance,bachelor,Financial Analyst
+equity research;valuation;excel,investments,bachelor,Investment Analyst
+valuation;excel;equity research,investment banking,master,Investment Analyst
+excel;valuation;equity research,finance,bachelor,Investment Analyst
+equity research;financial modeling;valuation,investing,bachelor,Investment Analyst
+statistics;probability;excel,risk,bachelor,Risk Analyst
+probability;statistics;sql,risk management,bachelor,Risk Analyst
+excel;statistics;probability,risk analysis,master,Risk Analyst
+statistics;excel;data analysis,risk,bachelor,Risk Analyst
+python;sql;data analysis,fintech,bachelor,FinTech Engineer
+data analysis;python;sql,financial technology,bachelor,FinTech Engineer
+python;financial systems;sql,fintech,bachelor,FinTech Engineer
+sql;python;data analysis,finance technology,diploma,FinTech Engineer
+accounting;taxation;excel,finance,diploma,Accountant
+excel;accounting;taxation,accounting,bachelor,Accountant
+taxation;accounting;excel,financial accounting,diploma,Accountant
+accounting;excel;taxation,finance,associate degree,Accountant
+marketing;seo;content creation,marketing,diploma,Marketing Specialist
+seo;marketing;content creation,digital marketing,bachelor,Marketing Specialist
+content creation;seo;marketing,marketing,bootcamp,Marketing Specialist
+marketing;content creation;seo,digital marketing,diploma,Marketing Specialist
+graphic design;photoshop;creativity,design,diploma,Graphic Designer
+photoshop;graphic design;creativity,graphic design,bachelor,Graphic Designer
+creativity;photoshop;graphic design,design,self-taught,Graphic Designer
+graphic design;creativity;photoshop,visual design,diploma,Graphic Designer
+nursing;patient care;communication,health,bachelor,Nurse
+patient care;nursing;communication,healthcare,bachelor,Nurse
+communication;nursing;patient care,nursing,bachelor,Nurse
+nursing;communication;patient care,health,diploma,Nurse
+project management;planning;leadership,business,bachelor,Project Manager
+leadership;project management;planning,project management,bachelor,Project Manager
+planning;leadership;project management,business management,master,Project Manager
+project management;leadership;planning,management,bachelor,Project Manager
+ux design;figma;user research,design,bachelor,UX Designer
+figma;user research;ux design,user experience,bachelor,UX Designer
+user research;ux design;prototyping,design,bootcamp,UX Designer
+wireframing;figma;ux design,ux design,bachelor,UX Designer
+ux design;ui design;figma,product design,bachelor,UX/UI Designer
+docker;kubernetes;ci/cd,devops,bachelor,DevOps Engineer
+kubernetes;docker;jenkins,cloud infrastructure,bachelor,DevOps Engineer
+ci/cd;docker;aws,devops,bachelor,DevOps Engineer
+linux;docker;kubernetes,devops engineering,diploma,DevOps Engineer
+jenkins;kubernetes;docker,devops,bachelor,DevOps Engineer
+product strategy;roadmapping;analytics,product management,bachelor,Product Manager
+roadmapping;user stories;product strategy,product,master,Product Manager
+analytics;product strategy;roadmapping,product management,bachelor,Product Manager
+user stories;product strategy;analytics,product,bachelor,Product Manager
+agile;product strategy;roadmapping,product management,bachelor,Product Manager
+sql;excel;tableau,analytics,bachelor,Data Analyst
+excel;sql;data visualization,data analysis,bachelor,Data Analyst
+tableau;sql;excel,analytics,diploma,Data Analyst
+data visualization;sql;excel,business analytics,bachelor,Data Analyst
+power bi;sql;excel,data analytics,bachelor,Data Analyst
+swift;ios;mobile development,mobile apps,bachelor,iOS Developer
+ios;swift;xcode,mobile development,bachelor,iOS Developer
+mobile development;swift;ios,app development,bootcamp,iOS Developer
+xcode;swift;ios,ios development,bachelor,iOS Developer
+kotlin;android;mobile development,mobile apps,bachelor,Android Developer
+android;kotlin;java,mobile development,bachelor,Android Developer
+java;android;mobile development,android development,bachelor,Android Developer
+mobile development;kotlin;android,app development,diploma,Android Developer
+react native;javascript;mobile development,mobile apps,bachelor,Mobile Developer
+flutter;dart;mobile development,mobile development,bachelor,Mobile Developer
+javascript;react native;mobile development,app development,bootcamp,Mobile Developer
+dart;flutter;mobile development,cross platform,bachelor,Mobile Developer
+aws;cloud architecture;python,cloud,bachelor,Cloud Architect
+cloud architecture;aws;azure,cloud computing,bachelor,Cloud Architect
+azure;cloud architecture;networking,cloud infrastructure,master,Cloud Architect
+gcp;cloud architecture;aws,cloud,bachelor,Cloud Architect
+terraform;aws;cloud architecture,cloud engineering,bachelor,Cloud Solutions Architect
+business analysis;requirements gathering;sql,business,bachelor,Business Analyst
+requirements gathering;business analysis;documentation,business analysis,bachelor,Business Analyst
+sql;business analysis;excel,business analytics,bachelor,Business Analyst
+business analysis;data analysis;requirements gathering,business,diploma,Business Analyst
+process improvement;business analysis;requirements gathering,business,bachelor,Business Analyst
+seo;google analytics;content marketing,marketing,diploma,Digital Marketing Manager
+content marketing;seo;social media,digital marketing,bachelor,Digital Marketing Manager
+google analytics;seo;paid advertising,marketing,bachelor,Digital Marketing Manager
+social media;content marketing;seo,digital marketing,bachelor,Digital Marketing Manager
+email marketing;seo;content marketing,marketing,bachelor,Digital Marketing Specialist
+content writing;seo;storytelling,content,bachelor,Content Creator
+video editing;storytelling;content creation,content creation,diploma,Content Creator
+storytelling;social media;content writing,content,self-taught,Content Creator
+content creation;video editing;storytelling,media,bachelor,Content Writer
+podcasting;content creation;storytelling,media production,bachelor,Content Producer
+recruitment;hr management;communication,human resources,bachelor,HR Manager
+hr management;recruitment;employee relations,hr,bachelor,HR Manager
+employee relations;hr management;communication,human resources,master,HR Manager
+communication;recruitment;hr management,hr,bachelor,HR Specialist
+talent acquisition;recruitment;hr management,human resources,bachelor,Talent Acquisition Manager
+sales;negotiation;crm,sales,diploma,Sales Manager
+negotiation;sales;customer relations,sales,bachelor,Sales Manager
+crm;sales;negotiation,business development,bachelor,Sales Manager
+customer relations;sales;communication,sales,bachelor,Sales Executive
+business development;sales;negotiation,sales,bachelor,Business Development Manager
+curriculum development;lesson planning;communication,education,bachelor,Teacher
+lesson planning;student assessment;curriculum development,education,bachelor,Education Specialist
+student assessment;curriculum development;communication,teaching,bachelor,Educator
+classroom management;lesson planning;communication,education,bachelor,High School Teacher
+teaching;curriculum development;student assessment,education,master,College Professor
+patient care;medical knowledge;empathy,healthcare,bachelor,Healthcare Professional
+medical knowledge;patient care;communication,medicine,bachelor,Medical Professional
+diagnosis;patient care;medical knowledge,healthcare,phd,Doctor
+empathy;counseling;communication,psychology,master,Psychologist
+counseling;therapy;empathy,mental health,master,Therapist
+legal research;contract law;writing,law,phd,Lawyer
+contract law;legal research;negotiation,legal,phd,Attorney
+legal writing;legal research;contract law,law,phd,Legal Counsel
+litigation;legal research;contract law,law,phd,Trial Lawyer
+compliance;legal research;contract law,legal,bachelor,Compliance Officer
+ethical hacking;penetration testing;security,cybersecurity,bachelor,Ethical Hacker
+penetration testing;networking;security,security,bachelor,Penetration Tester
+security;ethical hacking;linux,cybersecurity,diploma,Security Researcher
+vulnerability assessment;security;networking,cybersecurity,bachelor,Security Analyst
+incident response;security;networking,cybersecurity,bachelor,Security Engineer
+blockchain;solidity;cryptography,blockchain,bachelor,Blockchain Developer
+solidity;smart contracts;blockchain,cryptocurrency,bachelor,Smart Contract Developer
+cryptography;blockchain;security,blockchain technology,bachelor,Blockchain Engineer
+web3;blockchain;solidity,decentralized apps,bootcamp,Web3 Developer
+nft;blockchain;solidity,crypto,bachelor,NFT Developer
+game design;unity;c#,game development,bachelor,Game Developer
+unity;c#;game design,gaming,bachelor,Game Designer
+unreal engine;c++;game design,game development,bachelor,Game Engineer
+game design;unity;3d modeling,gaming,diploma,Video Game Designer
+c#;unity;game programming,game development,bachelor,Game Programmer
+photography;photo editing;creativity,photography,diploma,Photographer
+photo editing;lightroom;photography,visual arts,bachelor,Professional Photographer
+videography;video editing;storytelling,filmmaking,bachelor,Videographer
+video editing;premiere pro;storytelling,video production,bachelor,Video Editor
+filmmaking;videography;storytelling,film,bachelor,Film Director

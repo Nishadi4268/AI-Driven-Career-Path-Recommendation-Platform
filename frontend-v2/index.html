@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CareerAI v2 – Career Recommendations</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header" role="banner">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">🧭</span>
+      <h1>CareerAI v2</h1>
+    </div>
+    <p class="subtitle">A cleaner, accessible, and responsive experience.</p>
+  </header>
+
+  <main class="container" role="main">
+    <section class="form" aria-labelledby="form-title">
+      <h2 id="form-title">Your Profile</h2>
+
+      <div class="field-group">
+        <label for="skills-input">Skills</label>
+        <div class="chips-input" id="skills-container">
+          <div class="chips" id="skills-chips" aria-live="polite" aria-relevant="additions removals"></div>
+          <input id="skills-input" name="skills-input" placeholder="Type a skill and press Enter" aria-describedby="skills-help" autocomplete="off" />
+        </div>
+        <p id="skills-help" class="help">Examples: Python, SQL, UX, Cloud</p>
+      </div>
+
+      <div class="field-group">
+        <label for="interest">Interests</label>
+        <input id="interest" name="interest" placeholder="e.g., AI, FinTech, Healthcare" aria-describedby="interest-help" />
+        <p id="interest-help" class="help">Domains or topics you enjoy.</p>
+      </div>
+
+      <div class="field-group">
+        <label for="education">Education Level</label>
+        <select id="education" name="education" aria-describedby="education-help">
+          <option value="">Select your education level</option>
+          <option value="High School">High School</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Associate Degree">Associate Degree</option>
+          <option value="Bachelor">Bachelor's Degree</option>
+          <option value="Master">Master's Degree</option>
+          <option value="PhD">PhD / Doctorate</option>
+          <option value="Self-taught">Self-taught</option>
+          <option value="Bootcamp">Bootcamp Graduate</option>
+          <option value="Other">Other</option>
+        </select>
+        <input id="education-other" name="education-other" placeholder="Specify your education level" aria-label="Custom education level" style="display: none; margin-top: 8px;" />
+        <p id="education-help" class="help">Select from common levels or choose "Other" to specify</p>
+      </div>
+
+      <div class="actions">
+        <button id="submit-btn" class="primary">Get Recommendations</button>
+        <button id="reset-btn" class="ghost" type="button">Reset</button>
+      </div>
+      <div id="error" class="error" role="alert" aria-live="assertive" hidden></div>
+    </section>
+
+    <section aria-labelledby="results-title" class="results-section">
+      <h2 id="results-title">Your Recommendations</h2>
+      <div id="output" class="output" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state">
+        <div class="empty-illustration" aria-hidden="true">🔎</div>
+        <p>Enter your details and click "Get Recommendations" to see tailored career paths with course suggestions.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <footer class="app-footer" role="contentinfo">
+    <p>Backend: FastAPI at http://127.0.0.1:8000/recommend</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

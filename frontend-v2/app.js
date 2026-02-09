@@ -1,5 +1,5 @@
-import { recommend } from "./api.js";
-import { renderChips, attachChipHandlers, setLoading, showEmptyState, showError, clearResults, addToast, buildResultCard } from "./ui.js";
+import { recommend, sendFeedback } from "./api.js";
+import { renderChips, attachChipHandlers, setLoading, showEmptyState, showError, clearResults, addToast, buildResultCard, attachFeedbackHandlers } from "./ui.js";
 
 const selectors = {
   chips: document.getElementById("skills-chips"),
@@ -110,6 +110,10 @@ async function submitForm() {
     const result = await recommend(payload);
     const card = buildResultCard(result, payload);
     selectors.output.appendChild(card);
+    attachFeedbackHandlers(card, result, payload, async (feedbackPayload) => {
+      await sendFeedback(feedbackPayload);
+      addToast(selectors.toasts, "Feedback sent. Thanks!");
+    });
     addToast(selectors.toasts, "Recommendations ready.");
   } catch (err) {
     console.error(err);

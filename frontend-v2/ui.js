@@ -170,6 +170,67 @@ export function buildResultCard(result, input) {
       ${courseSuggestionsHtml}
     </div>
     ` : ''}
+
+    <div class="feedback-section">
+      <h3 class="section-title">🗣️ Share Feedback</h3>
+      <p class="section-desc">Help us improve by rating this recommendation.</p>
+      <div class="feedback-actions">
+        <button class="feedback-btn" type="button" data-helpful="true">Helpful</button>
+        <button class="feedback-btn" type="button" data-helpful="false">Not Helpful</button>
+      </div>
+      <div class="feedback-fields">
+        <label class="feedback-label">Suggested career (optional)</label>
+        <input class="feedback-input" name="feedback-career" placeholder="e.g., Data Analyst" />
+        <label class="feedback-label">Comment (optional)</label>
+        <textarea class="feedback-textarea" name="feedback-comment" rows="3" placeholder="Tell us what could be better"></textarea>
+        <button class="feedback-submit" type="button">Send Feedback</button>
+        <div class="feedback-status" role="status" aria-live="polite"></div>
+      </div>
+    </div>
   `;
   return card;
+}
+
+export function attachFeedbackHandlers(card, result, input, submitFeedback) {
+  const buttons = Array.from(card.querySelectorAll(".feedback-btn"));
+  const submitBtn = card.querySelector(".feedback-submit");
+  const statusEl = card.querySelector(".feedback-status");
+  const careerInput = card.querySelector(".feedback-input");
+  const commentInput = card.querySelector(".feedback-textarea");
+
+  let helpfulValue = null;
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("selected"));
+      btn.classList.add("selected");
+      helpfulValue = btn.dataset.helpful === "true";
+    });
+  });
+
+  submitBtn.addEventListener("click", async () => {
+    statusEl.textContent = "";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const payload = {
+      skills: input.skills,
+      interest: input.interest,
+      education: input.education,
+      recommended_career: result.recommended_career,
+      selected_career: careerInput.value.trim(),
+      helpful: helpfulValue,
+      comment: commentInput.value.trim(),
+    };
+
+    try {
+      await submitFeedback(payload);
+      statusEl.textContent = "Thanks for the feedback!";
+      submitBtn.textContent = "Sent";
+    } catch (error) {
+      statusEl.textContent = "Could not send feedback. Try again.";
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send Feedback";
+    }
+  });
 }
